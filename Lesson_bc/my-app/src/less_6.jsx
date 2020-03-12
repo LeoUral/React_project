@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function FormattedDate(props) {
+    return <h2>It is: {props.date.toLocaleTimeString()}. </h2>
+}
+
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -27,7 +31,8 @@ class Clock extends React.Component {
         return (
             <div>
                 <h1>Hi! Hello! {this.props.name}</h1>
-                <h2>Now: {this.state.date.toLocaleTimeString()} - {this.props.comment} </h2>
+                <FormattedDate date={this.state.date} />
+                <h2> - {this.props.comment} </h2>
             </div>
         );
     }
