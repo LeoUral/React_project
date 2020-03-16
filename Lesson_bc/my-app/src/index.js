@@ -7,7 +7,8 @@
 // import './less_8.jsx';
 // import './less_9.jsx';
 // import './less_10.jsx';
-import './less_11.jsx';
+// import './less_11.jsx';
+import './less_12.jsx';
 
 
 //в этот файл будем экспортировать файлы из уроков
